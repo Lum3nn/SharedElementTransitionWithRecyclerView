@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
-    app:startDestination="@id/imgFragment">
-
+    app:startDestination="@id/itemsFragment">
     <fragment
-        android:id="@+id/imgFragment"
-        android:name="com.example.imgtransitionwithrecyclerview.ImgFragment"
-        android:label="ImgFragment" >
+        android:id="@+id/itemsFragment"
+        android:name="com.example.imgtransitionwithrecyclerview.ItemsFragment"
+        android:label="ItemsFragment" >
         <action
-            android:id="@+id/action_imgFragment_to_imgDetailsFragment"
-            app:destination="@id/imgDetailsFragment" />
+            android:id="@+id/action_itemsFragment_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/imgDetailsFragment"
-        android:name="com.example.imgtransitionwithrecyclerview.ImgDetailsFragment"
-        android:label="ImgDetailsFragment" >
+        android:id="@+id/itemDetailsFragment"
+        android:name="com.example.imgtransitionwithrecyclerview.ItemDetailsFragment"
+        android:label="ItemDetailsFragment" >
         <argument
             android:name="imgId"
             app:argType="integer" />
